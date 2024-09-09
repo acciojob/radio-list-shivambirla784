@@ -10,46 +10,42 @@
             flex-direction: column;
             gap: 10px;
         }
-        .radio-item {
+        .input {
             display: flex;
             align-items: center;
             cursor: pointer;
         }
-        .radio-item input[type="radio"] {
+        .input input[type="radio"] {
             margin-right: 10px;
         }
-        .radio-item input[type="radio"]:disabled + span {
-            opacity: 0.5;
-            cursor: not-allowed;
-        }
-        .radio-item:nth-child(even){
+        .input:nth-child(even){
 			color: red;
 		}
     </style>
 </head>
 <body>
     <div class="radio-list">
-        <label class="radio-item">
+        <label class="input">
             <input type="radio" name="options" value="option1">
             <span>Option 1</span>
         </label>
-        <label class="radio-item">
+        <label class="input">
             <input type="radio" name="options" value="option2" disabled class="input">
             <span>Option 2</span>
         </label>
-        <label class="radio-item">
+        <label class="input">
             <input type="radio" name="options" value="option3" checked>
             <span>Option 3</span>
         </label>
-        <label class="radio-item">
+        <label class="input">
             <input type="radio" name="options" value="option4" class="input">
             <span>Option 4</span>
         </label>
-        <label class="radio-item">
+        <label class="input">
             <input type="radio" name="options" value="option5">
             <span>Option 5</span>
         </label>
-        <label class="radio-item">
+        <label class="input">
             <input type="radio" name="options" value="option6" class="input">
             <span>Option 6</span>
         </label>
