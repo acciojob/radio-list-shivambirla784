@@ -1,16 +1,58 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radio Button List</title>
+    <style>
+        .radio-list {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .radio-item {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+        .radio-item input[type="radio"] {
+            margin-right: 10px;
+        }
+        .radio-item input[type="radio"]:disabled + span {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+        .red-text {
+            color: red;
+        }
+    </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
-
+    <div class="radio-list">
+        <label class="radio-item">
+            <input type="radio" name="options" value="option1">
+            <span>Option 1</span>
+        </label>
+        <label class="radio-item">
+            <input type="radio" name="options" value="option2" disabled class="input">
+            <span class="red-text">Option 2</span>
+        </label>
+        <label class="radio-item">
+            <input type="radio" name="options" value="option3" checked>
+            <span>Option 3</span>
+        </label>
+        <label class="radio-item">
+            <input type="radio" name="options" value="option4" class="input">
+            <span class="red-text">Option 4</span>
+        </label>
+        <label class="radio-item">
+            <input type="radio" name="options" value="option5">
+            <span>Option 5</span>
+        </label>
+        <label class="radio-item">
+            <input type="radio" name="options" value="option6" class="input">
+            <span class="red-text">Option 6</span>
+        </label>
+    </div>
 </body>
-
 </html>
