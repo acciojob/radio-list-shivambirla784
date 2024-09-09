@@ -22,9 +22,9 @@
             opacity: 0.5;
             cursor: not-allowed;
         }
-        .red-text {
-            color: red;
-        }
+        .radio-item:nth-child(even){
+			color: red;
+		}
     </style>
 </head>
 <body>
@@ -35,7 +35,7 @@
         </label>
         <label class="radio-item">
             <input type="radio" name="options" value="option2" disabled class="input">
-            <span class="red-text">Option 2</span>
+            <span>Option 2</span>
         </label>
         <label class="radio-item">
             <input type="radio" name="options" value="option3" checked>
@@ -43,7 +43,7 @@
         </label>
         <label class="radio-item">
             <input type="radio" name="options" value="option4" class="input">
-            <span class="red-text">Option 4</span>
+            <span>Option 4</span>
         </label>
         <label class="radio-item">
             <input type="radio" name="options" value="option5">
@@ -51,7 +51,7 @@
         </label>
         <label class="radio-item">
             <input type="radio" name="options" value="option6" class="input">
-            <span class="red-text">Option 6</span>
+            <span>Option 6</span>
         </label>
     </div>
 </body>
